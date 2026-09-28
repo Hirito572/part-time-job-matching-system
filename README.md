@@ -59,8 +59,6 @@ GitHub repository:
 - [x] GitHub repository үүсгэсэн
 - [x] Repository-г local орчинд clone хийсэн
 - [x] README.md үүсгэсэн
-- [ ] Scrum PO тодорхойлох
-- [ ] Scrum Master тодорхойлох
-- [ ] README шинэчлэх
-- [ ] Commit хийх
-- [ ] GitHub руу Push хийх
+- [x] README шинэчлэх
+- [x] Commit хийх
+- [x] GitHub руу Push хийх
