@@ -4,11 +4,10 @@
 
 ### Багийн мэдээлэл
 
-| № | Нэр | Оюутны код | Scrum үүрэг |
-|---|---|---|---|
-| 1 | Э. Мөнх-Очир | B232270022 | Development Team |
-| 2 |  |  | Development Team |
-| 3 |  |  | Development Team |
+| № | Нэр           | Оюутны код | Scrum үүрэг      |
+| 1 | Э. Мөнх-Очир  | B232270022 | Development Team |
+| 2 | Т. Оюунжаргал | B232270149 | Development Team |
+| 3 | Б. Азтүшиг    | B232270014 | Development Team |
 
 ### Scrum Roles
 
