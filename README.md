@@ -12,8 +12,8 @@
 
 ### Scrum Roles
 
-- **Product Owner (PO):** Одоогоор тохироогүй
-- **Scrum Master (SM):** Одоогоор тохироогүй
+- **Product Owner (PO):** Э. Мөнх-Очир
+- **Scrum Master (SM):** Б. Азтүшиг
 - **Development Team:** Бүх багийн гишүүд
 
 > PO болон SM-ийн үүргийг багийн гишүүдтэй ярилцаж тохирсны дараа шинэчилнэ.
