@@ -444,3 +444,8 @@ Lead Time болон Cycle Time-ийн ялгаа, тэдгээрийн тооц
 ## 8. Repository
 
 [Цагийн ажил зуучлалын систем — GitHub Repository](https://github.com/Hirito572/part-time-job-matching-system)
+## Lab 6 - Git Collaboration
+
+This section demonstrates feature branching and collaborative development.
+
+Feature: Greeting message
