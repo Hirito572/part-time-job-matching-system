@@ -449,3 +449,4 @@ Lead Time болон Cycle Time-ийн ялгаа, тэдгээрийн тооц
 This section demonstrates feature branching and collaborative development.
 
 Feature: Greeting message
+Feature: Welcome message
