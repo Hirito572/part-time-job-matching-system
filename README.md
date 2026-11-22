@@ -1,68 +1,94 @@
 # Цагийн ажил зуучлалын систем
 
+
+---
+
 ## Лабораторийн ажил №1
 
 ### Багийн мэдээлэл
 
 | № | Нэр | Оюутны код | Scrum үүрэг |
+
 |---|---|---|---|
+
 | 1 | Э. Мөнх-Очир  | B232270022 | Development Team, PO |
+
 | 2 | Т. Оюунжаргал | B232270149 | Development Team  |
+
 | 3 | Б. Азтүшиг    | B232270014 | Development Team, SM |
 
 ### Scrum Roles
 
-- **Product Owner (PO):** Э. Мөнх-Очир
-- **Scrum Master (SM):** Б. Азтүшиг
-- **Development Team:** Бүх багийн гишүүд
+- ****Product Owner (PO):**** Э. Мөнх-Очир
+
+- ****Scrum Master (SM):**** Б. Азтүшиг
+
+- ****Development Team:**** Бүх багийн гишүүд
 
 > PO болон SM-ийн үүргийг багийн гишүүдтэй ярилцаж тохирсны дараа шинэчилнэ.
 
-## Төслийн нэр
+### Төслийн нэр
 
-**Цагийн ажил зуучлалын систем**
+****Цагийн ажил зуучлалын систем****
 
-**English:** Part-Time Job Matching System
+****English:**** Part-Time Job Matching System
 
-## Төслийн зорилго
+### Төслийн зорилго
 
 Ажил хайгч болон ажил олгогчийг хялбар холбож, ажил хайгчид өөрийн ур чадвар, боломжит цаг, байршил болон ажлын сонирхолд тохирсон цагийн ажлыг олох боломжийг бүрдүүлэх.
 
-## Лабораторийн зорилго
+### Лабораторийн зорилго
 
 Энэхүү лабораторийн ажлаар:
 
 - Scrum багийн үүргүүдийг тодорхойлох
+
 - Git ашиглан хувилбарын удирдлага хийх
+
 - GitHub repository ашиглах
+
 - README файл үүсгэх
+
 - Commit болон Push хийх
+
 - Багаар хамтран ажиллах Git workflow-той танилцах
 
-## Ашигласан технологи
+### Ашигласан технологи
 
 - Git
+
 - GitHub
+
 - Visual Studio Code
+
 - Markdown
 
-## Repository
+### Repository
 
 GitHub repository:
 
 `https://github.com/Hirito572/part-time-job-matching-system`
 
-## Төлөв
+### Төлөв
 
 - [x] Git суулгасан
+
 - [x] Git тохиргоо хийсэн
+
 - [x] GitHub repository үүсгэсэн
+
 - [x] Repository-г local орчинд clone хийсэн
+
 - [x] README.md үүсгэсэн
+
 - [x] README шинэчлэх
+
 - [x] Commit хийх
+
 - [x] GitHub руу Push хийх
 
+
+---
 
 ## Лаборатори 2 — User Story ба Product Backlog
 
@@ -73,10 +99,15 @@ GitHub repository:
 ### Хийгдсэн ажил
 
 - Төслийн зорилго, шийдвэрлэх асуудал болон үндсэн функцуудыг тодорхойлсон.
+
 - Ажил хайгч болон ажил олгогчийн хэрэгцээнд тулгуурлан 15 User Story боловсруулсан.
+
 - User Story бүрд Priority болон шаардлагатай тэмдэглэлүүдийг тодорхойлсон.
+
 - INVEST зарчмаар User Story-нуудыг үнэлсэн.
+
 - GitHub Issues дээр User Story-нуудыг бүртгэсэн.
+
 - GitHub Projects дээр Product Backlog үүсгэж, ажлуудыг эрэмбэлсэн.
 
 ### Үр дүн
@@ -86,52 +117,73 @@ GitHub repository:
 ### Ашигласан хэрэгсэл
 
 - GitHub Issues
+
 - GitHub Projects
+
 - Markdown
 
 
-# Лабораторийн ажил №3 — Story Point ба Sprint Planning
+---
 
-## 1. Төслийн мэдээлэл
+## Лабораторийн ажил №3 — Story Point ба Sprint Planning
+
+### 1. Төслийн мэдээлэл
 
 | Үзүүлэлт | Мэдээлэл |
+
 |---|---|
+
 | Төслийн нэр | Цагийн ажил зуучлалын систем |
+
 | Англи нэр | Part-Time Job Matching System |
+
 | Хичээл | Программ хангамжийн инженерчлэлийн төсөл |
+
 | Арга зүй | Scrum |
+
 | Лабораторийн ажил | №3 — Story Point ба Sprint Planning |
+
 | GitHub Repository | [part-time-job-matching-system](https://github.com/Hirito572/part-time-job-matching-system) |
 
-## 2. Багийн бүрэлдэхүүн ба үүрэг
+### 2. Багийн бүрэлдэхүүн ба үүрэг
 
 | № | Овог, нэр | Оюутны код | Scrum үүрэг |
+
 |---|---|---|---|
+
 | 1 | Э. Мөнх-Очир | B232270022 | Product Owner (PO) |
+
 | 2 | Б. Азтүшиг | B232270014 | Scrum Master (SM) |
+
 | 3 | Т. Оюунжаргал | B232270149 | Development Team |
 
-## 3. Лабораторийн ажлын зорилго
+### 3. Лабораторийн ажлын зорилго
 
 Story Point ашиглан User Story-уудын ажлын хэмжээг үнэлэх, багийн хүчин чадлыг тооцоолох, эхний Sprint-д хэрэгжүүлэх ажлуудыг сонгох, Sprint Goal тодорхойлох болон сонгосон User Story-уудыг техникийн Task болгон задлах зорилготой.
 
-## 4. Төслийн товч танилцуулга
+### 4. Төслийн товч танилцуулга
 
 Цагийн ажил зуучлалын систем нь ажил хайгч болон ажил олгогчийг холбож, ажил хайгчдад байршил, ур чадвар, боломжит ажиллах цаг болон ажлын нөхцөлдөө тохирсон ажил хайх боломж олгоно.
 
 Системийн үндсэн боломжууд:
 
 - Ажил хайгч бүртгэл үүсгэх.
+
 - Профайл болон ур чадварын мэдээлэл удирдах.
+
 - Боломжит ажиллах цагаа бүртгэх.
+
 - Байршил болон ажлын нөхцөлөөр ажил хайх.
+
 - Ажлын зарын дэлгэрэнгүй мэдээлэл харах.
+
 - Ажилд хүсэлт илгээх.
+
 - Ажил олгогч ажлын зар үүсгэх, ирсэн хүсэлтүүдийг боловсруулах.
 
-## 5. Story Point үнэлгээ
+### 5. Story Point үнэлгээ
 
-### 5.1. Story Point-ийн тухай
+#### 5.1. Story Point-ийн тухай
 
 Story Point нь User Story-г хэрэгжүүлэх ажлын харьцангуй хэмжээ, төвөгшил болон эрсдэлийг илэрхийлнэ. Энэ нь шууд хугацааны нэгж биш.
 
@@ -139,161 +191,239 @@ Story Point нь User Story-г хэрэгжүүлэх ажлын харьцан�
 
 `0, 1, 2, 3, 5, 8, 13, 20, 40, 100`
 
-### 5.2. Planning Poker
+#### 5.2. Planning Poker
 
 Багийн гишүүд Planning Poker аргыг ашиглан User Story бүрийн төвөгшил, ажлын хэмжээ болон эрсдэлийг харгалзан Story Point үнэлгээ хийсэн. Fibonacci дарааллыг ашиглан үнэлгээг харьцуулж, User Story бүрийн анхны Story Point утгыг тогтоосон.
 
 Үнэлгээний үр дүнг GitHub Projects-ийн `Story Points` талбарт бүртгэж, Sprint Planning-д ашигласан.
 
-### 5.3. User Story-уудын үнэлгээ
+#### 5.3. User Story-уудын үнэлгээ
 
 | ID | User Story | Priority | Story Points |
+
 |---|---|---|---:|
+
 | US-01 | Ажил хайгч шинэ бүртгэл үүсгэх | High | 1 |
+
 | US-02 | Ажил хайгч профайлын мэдээллээ удирдах | High | 2 |
+
 | US-03 | Ажил хайгч ур чадвараа бүртгэх | High | 2 |
+
 | US-04 | Ажил хайгч боломжит ажиллах цагаа бүртгэх | High | 2 |
+
 | US-05 | Ажил хайгч хайлтын байршил болон радиусаа сонгох | High | 3 |
+
 | US-06 | Ажил хайгч ажлыг нөхцөлөөр хайх | High | 3 |
+
 | US-07 | Ажил хайгч ажлын зарын дэлгэрэнгүй мэдээллийг харах | High | 1 |
+
 | US-08 | Ажил хайгч тохирох ажилд хүсэлт илгээх | High | 2 |
+
 | US-09 | Ажил хайгч илгээсэн хүсэлтийн төлөвөө харах | Medium | 1 |
+
 | US-10 | Ажил хайгч өөрт тохирох ажлын санал авах | Medium | 5 |
+
 | US-11 | Ажил хайгч тохирох шинэ ажлын мэдэгдэл авах | Medium | 3 |
+
 | US-12 | Ажил хайгч баг үүсгэж, гишүүд урих | Medium | 5 |
+
 | US-13 | Ажил хайгч багаараа ажилд хүсэлт гаргах | Medium | 5 |
+
 | US-14 | Ажил олгогч ажил зарлах | High | 3 |
+
 | US-15 | Ажил олгогч ирсэн хүсэлтүүдийг боловсруулах | High | 3 |
-| | **Нийт** | | **41 SP** |
 
-## 6. Багийн хүчин чадал
+| | ****Нийт**** | | ****41 SP**** |
 
-### 6.1. Тооцоололд ашигласан үзүүлэлт
+### 6. Багийн хүчин чадал
+
+#### 6.1. Тооцоололд ашигласан үзүүлэлт
 
 | Үзүүлэлт | Утга |
+
 |---|---:|
+
 | Багийн гишүүдийн тоо | 3 |
+
 | Нэг гишүүний өдөрт ажиллах боломжит хугацаа | 2 цаг |
+
 | Sprint-ийн ажлын өдөр | 5 өдөр |
+
 | Үр ашигтай ажиллах коэффициент | 0.6 |
 
-### 6.2. Хүчин чадлын тооцоо
+#### 6.2. Хүчин чадлын тооцоо
 
-**Томьёо:**
+****Томьёо:****
 
 `Capacity = Гишүүдийн тоо × Өдөрт ажиллах цаг × Ажлын өдөр × Коэффициент`
 
 `Capacity = 3 × 2 × 5 × 0.6 = 18 SP`
 
-Иймээс багийн эхний Sprint-ийн тооцоолсон хүчин чадал **18 SP** байна.
+Иймээс багийн эхний Sprint-ийн тооцоолсон хүчин чадал ****18 SP**** байна.
 
-## 7. Sprint 1 Backlog
+### 7. Sprint 1 Backlog
 
 Багийн хүчин чадал болон User Story-уудын ач холбогдлыг харгалзан Sprint 1-д дараах 8 User Story-г сонгов.
 
 | ID | User Story | Story Points |
-|---|---|---:|
-| US-01 | Ажил хайгч шинэ бүртгэл үүсгэх | 1 |
-| US-02 | Ажил хайгч профайлын мэдээллээ удирдах | 2 |
-| US-03 | Ажил хайгч ур чадвараа бүртгэх | 2 |
-| US-04 | Ажил хайгч боломжит ажиллах цагаа бүртгэх | 2 |
-| US-06 | Ажил хайгч ажлыг нөхцөлөөр хайх | 3 |
-| US-07 | Ажил хайгч ажлын зарын дэлгэрэнгүй мэдээллийг харах | 1 |
-| US-08 | Ажил хайгч тохирох ажилд хүсэлт илгээх | 2 |
-| US-14 | Ажил олгогч ажил зарлах | 3 |
-| | **Нийт** | **16 SP** |
 
-### 7.1. Sprint-ийн хүчин чадлын харьцуулалт
+|---|---|---:|
+
+| US-01 | Ажил хайгч шинэ бүртгэл үүсгэх | 1 |
+
+| US-02 | Ажил хайгч профайлын мэдээллээ удирдах | 2 |
+
+| US-03 | Ажил хайгч ур чадвараа бүртгэх | 2 |
+
+| US-04 | Ажил хайгч боломжит ажиллах цагаа бүртгэх | 2 |
+
+| US-06 | Ажил хайгч ажлыг нөхцөлөөр хайх | 3 |
+
+| US-07 | Ажил хайгч ажлын зарын дэлгэрэнгүй мэдээллийг харах | 1 |
+
+| US-08 | Ажил хайгч тохирох ажилд хүсэлт илгээх | 2 |
+
+| US-14 | Ажил олгогч ажил зарлах | 3 |
+
+| | ****Нийт**** | ****16 SP**** |
+
+#### 7.1. Sprint-ийн хүчин чадлын харьцуулалт
 
 | Үзүүлэлт | Утга |
+
 |---|---:|
+
 | Багийн хүчин чадал | 18 SP |
+
 | Sprint 1-ийн төлөвлөсөн ачаалал | 16 SP |
+
 | Үлдсэн хүчин чадал | 2 SP |
 
 `18 SP − 16 SP = 2 SP`
 
 Sprint 1-д сонгосон ажлын хэмжээ багийн тооцоолсон хүчин чадлаас хэтрээгүй.
 
-## 8. Sprint Goal
+### 8. Sprint Goal
 
-**Sprint Goal:**
+****Sprint Goal:****
 
 Ажил хайгч бүртгэл үүсгэж, профайл болон ур чадвараа бүрдүүлэн ажил хайж, сонгосон ажилдаа хүсэлт гаргах; ажил олгогч ажил зарлаж, ирсэн хүсэлтийг боловсруулах үндсэн боломжийг бий болгох.
 
-### Хүлээгдэж буй үр дүн
+#### Хүлээгдэж буй үр дүн
 
 - Ажил хайгч бүртгэл үүсгэх.
+
 - Профайл болон ур чадварын мэдээллээ бүртгэх.
+
 - Боломжит ажиллах цагаа бүртгэх.
+
 - Ажлын зар хайж, дэлгэрэнгүй мэдээлэл харах.
+
 - Ажилд хүсэлт илгээх.
+
 - Ажил олгогч ажлын зар үүсгэх.
 
-## 9. Sprint 1-ийн техникийн Task-ууд
+### 9. Sprint 1-ийн техникийн Task-ууд
 
 Сонгосон User Story бүрийг хэрэгжүүлэхэд шаардлагатай жижиг техникийн Task болгон задалсан. Task-уудыг GitHub Projects дээр холбогдох User Story-ийн `Sub-issues` хэсэгт бүртгэсэн.
 
 | User Story | Task ID | Task-ийн нэр |
+
 |---|---|---|
+
 | US-01 | T-01 | Бүртгэлийн форм боловсруулах |
+
 | US-01 | T-02 | Бүртгэлийн өгөгдөл шалгах |
+
 | US-01 | T-03 | Бүртгэлийн хүсэлт боловсруулах |
+
 | US-02 | T-04 | Профайлын мэдээллийн талбар тодорхойлох |
+
 | US-02 | T-05 | Профайл засварлах форм боловсруулах |
+
 | US-02 | T-06 | Профайлын мэдээлэл хадгалах |
+
 | US-03 | T-07 | Ур чадварын мэдээллийн талбар тодорхойлох |
+
 | US-03 | T-08 | Ур чадвар нэмэх, засах интерфейс боловсруулах |
+
 | US-03 | T-09 | Ур чадварыг хадгалж профайлтай холбох |
+
 | US-04 | T-10 | Боломжит өдөр, цагийн өгөгдлийн бүтэц тодорхойлох |
+
 | US-04 | T-11 | Боломжит өдөр, цаг сонгох интерфейс боловсруулах |
+
 | US-04 | T-12 | Боломжит цагийг хадгалж шинэчлэх |
+
 | US-06 | T-13 | Ажил хайх шүүлтүүрүүд тодорхойлох |
+
 | US-06 | T-14 | Ажил хайх интерфейс боловсруулах |
+
 | US-06 | T-15 | Хайлтын үр дүнг харуулах |
+
 | US-07 | T-16 | Ажлын дэлгэрэнгүй мэдээллийн талбар тодорхойлох |
+
 | US-07 | T-17 | Ажлын дэлгэрэнгүй хуудас боловсруулах |
+
 | US-07 | T-18 | Сонгосон ажлын мэдээллийг харуулах |
+
 | US-08 | T-19 | Ажилд хүсэлт илгээх интерфейс боловсруулах |
+
 | US-08 | T-20 | Ажилд орох хүсэлтийн мэдээлэл тодорхойлох |
+
 | US-08 | T-21 | Хүсэлт илгээж хадгалах |
+
 | US-14 | T-22 | Ажлын зарын мэдээллийн талбар тодорхойлох |
+
 | US-14 | T-23 | Ажил зарлах форм боловсруулах |
+
 | US-14 | T-24 | Ажлын зарыг шалгаж хадгалах |
 
-Нийт **24 техникийн Task** тодорхойлсон. Task бүрийн хариуцагч болон төлөвийг GitHub Projects дээр удирдаж байна.
+Нийт ****24 техникийн Task**** тодорхойлсон. Task бүрийн хариуцагч болон төлөвийг GitHub Projects дээр удирдаж байна.
 
-## 10. GitHub Projects-ийн зохион байгуулалт
+### 10. GitHub Projects-ийн зохион байгуулалт
 
 GitHub Projects ашиглан Product Backlog болон Sprint 1-ийн ажлуудыг удирдсан.
 
 Төслийн самбарт дараах мэдээллийг бүртгэсэн:
 
 - User Story болон Task-ийн нэр, дугаар.
+
 - Priority.
+
 - Story Points.
+
 - Sprint.
+
 - Assignee буюу хариуцсан гишүүн.
+
 - Status буюу ажлын төлөв.
+
 - User Story болон Sub-issues-ийн холбоос.
 
 Ажлын төлөвийг `Todo`, `In Progress`, `Review`, `Done` гэсэн төлөвүүдээр удирдах боломжтой.
 
-## 11. Sprint-ийн амжилтын шалгуур
+### 11. Sprint-ийн амжилтын шалгуур
 
 Sprint Goal-д хүрсэн эсэхийг дараах шалгуураар үнэлнэ.
 
 1. Ажил хайгч бүртгэл үүсгэх боломжтой байх.
+
 2. Профайл болон ур чадварын мэдээлэл бүртгэх боломжтой байх.
+
 3. Боломжит ажиллах цагаа бүртгэх боломжтой байх.
+
 4. Ажил хайж, ажлын дэлгэрэнгүй мэдээлэл харах боломжтой байх.
+
 5. Ажилд хүсэлт илгээх боломжтой байх.
+
 6. Ажил олгогч ажлын зар үүсгэх боломжтой байх.
+
 7. Сонгосон User Story-уудын хүлээн авах шалгуурыг хангах.
 
 Эдгээр нь Sprint Goal-ийн амжилтыг үнэлэх шалгуур юм.
 
-## 12. Дүгнэлт
+### 12. Дүгнэлт
 
 Энэхүү лабораторийн ажлын хүрээнд төслийн 15 User Story-д Story Point үнэлгээ өгч, нийт ажлын хэмжээг 41 SP гэж тооцов. Гурван гишүүнтэй багийн хүчин чадлыг өдөрт хоёр цаг, таван ажлын өдөр, 0.6 коэффициент ашиглан 18 SP гэж тооцсон.
 
@@ -302,106 +432,131 @@ Sprint Goal-д хүрсэн эсэхийг дараах шалгуураар ү�
 Энэ төлөвлөлт нь эхний Sprint-ийн ажлын хүрээг тодорхойлж, багийн хүчин чадалд нийцсэн ажлын төлөвлөгөө гаргахад тусалсан.
 
 
-# Лаборатори 4 — Kanban ба Lean зарчим
+---
 
-## 1. Зорилго
+## Лаборатори 4 — Kanban ба Lean зарчим
+
+### 1. Зорилго
 
 Энэхүү лабораторийн ажлын зорилго нь Kanban аргыг ашиглан хөгжүүлэлтийн ажлын урсгалыг зохион байгуулах, Work In Progress (WIP) хязгаар тогтоох, Lead Time болон Cycle Time-ийг ойлгон тооцоолох, Lean-ийн үрэлгэн зардлуудыг тодорхойлоход оршино.
 
-## 2. Ашигласан хэрэгсэл
+### 2. Ашигласан хэрэгсэл
 
 - GitHub Issues
+
 - GitHub Projects
+
 - GitHub Markdown
+
 - Visual Studio Code
 
-## 3. Kanban самбар
+### 3. Kanban самбар
 
 Төслийн ажлын урсгалыг GitHub Projects дээр Kanban Board хэлбэрээр зохион байгуулсан.
 
-**Kanban самбарын нэр:** `Lab 4 - Kanban Board`
+****Kanban самбарын нэр:**** `Lab 4 - Kanban Board`
 
-### 3.1. Ажлын төлөвүүд
+#### 3.1. Ажлын төлөвүүд
 
 | Төлөв | Тайлбар |
+
 |---|---|
+
 | Todo | Эхлээгүй, хийхээр төлөвлөсөн ажил |
+
 | In Progress | Одоогоор гүйцэтгэж буй ажил |
+
 | Review | Дууссан ажлыг шалгаж, хянах үе шат |
+
 | Done | Бүрэн дууссан ажил |
 
 Ажлын урсгал:
 
 `Todo → In Progress → Review → Done`
 
-### 3.2. Kanban самбарын зохион байгуулалт
+#### 3.2. Kanban самбарын зохион байгуулалт
 
 GitHub Projects дээр өмнө нь үүсгэсэн 15 User Story-г Kanban Board-д байршуулсан.
 
 - Эхлээгүй ажлууд `Todo` төлөвт байна.
+
 - Ажил бодитоор эхлэхэд `In Progress` төлөвт шилжүүлнэ.
+
 - Шалгах шаардлагатай ажил `Review` төлөвт шилжинэ.
+
 - Шалгаж дууссан ажлыг `Done` төлөвт шилжүүлнэ.
 
-## 4. WIP хязгаарлалт
+### 4. WIP хязгаарлалт
 
-### 4.1. WIP гэж юу вэ?
+#### 4.1. WIP гэж юу вэ?
 
-WIP (*Work In Progress*) нь нэгэн зэрэг гүйцэтгэж болох ажлын дээд хэмжээг илэрхийлнэ. WIP хязгаарлалт нь олон ажлыг зэрэг эхлүүлэхээс сэргийлж, эхэлсэн ажлаа дуусгахад анхаарахад тусална.
+WIP (**Work In Progress**) нь нэгэн зэрэг гүйцэтгэж болох ажлын дээд хэмжээг илэрхийлнэ. WIP хязгаарлалт нь олон ажлыг зэрэг эхлүүлэхээс сэргийлж, эхэлсэн ажлаа дуусгахад анхаарахад тусална.
 
-### 4.2. Тогтоосон WIP хязгаар
+#### 4.2. Тогтоосон WIP хязгаар
 
 | Kanban багана | WIP хязгаар | Тайлбар |
+
 |---|---:|---|
+
 | Todo | Хязгааргүй | Хийхээр төлөвлөсөн ажлууд |
+
 | In Progress | 3 | Нэгэн зэрэг хамгийн ихдээ 3 ажил |
+
 | Review | 2 | Нэгэн зэрэг хамгийн ихдээ 2 ажил |
+
 | Done | Хязгааргүй | Дууссан ажлууд |
 
-### 4.3. WIP хязгаарын дүрэм
+#### 4.3. WIP хязгаарын дүрэм
 
 1. `In Progress` баганад 3-аас олон ажил зэрэг байршуулахгүй.
+
 2. `Review` баганад 2-оос олон ажил зэрэг байршуулахгүй.
+
 3. WIP хязгаарт хүрсэн үед шинэ ажил эхлүүлэхээс өмнө өмнөх ажлыг дуусгах эсвэл дараагийн шатанд шилжүүлэхэд анхаарна.
+
 4. Ажлын төлөвийг бодит гүйцэтгэлд үндэслэн шинэчилнэ.
 
 GitHub Projects дээр `In Progress` баганын хязгаарыг 3, `Review` баганын хязгаарыг 2 болгон тохируулсан.
 
-## 5. Lead Time ба Cycle Time
+### 5. Lead Time ба Cycle Time
 
-### 5.1. Lead Time
+#### 5.1. Lead Time
 
-**Lead Time** гэдэг нь ажил үүссэнээс эхлээд бүрэн дуусах хүртэлх нийт хугацаа юм.
+****Lead Time**** гэдэг нь ажил үүссэнээс эхлээд бүрэн дуусах хүртэлх нийт хугацаа юм.
 
-### 5.2. Cycle Time
+#### 5.2. Cycle Time
 
-**Cycle Time** гэдэг нь ажил бодитоор хийгдэж эхэлснээс бүрэн дуусах хүртэлх хугацаа юм.
+****Cycle Time**** гэдэг нь ажил бодитоор хийгдэж эхэлснээс бүрэн дуусах хүртэлх хугацаа юм.
 
-### 5.3. Хоорондын хамаарал
+#### 5.3. Хоорондын хамаарал
 
 `Lead Time = Хүлээх хугацаа + Cycle Time`
 
 Lead Time нь хүлээсэн хугацааг багтаадаг бол Cycle Time нь ажил эхэлснээс хойших хугацааг илэрхийлнэ.
 
-### 5.4. Жишээ тооцоолол
+#### 5.4. Жишээ тооцоолол
 
 Доорх огноонууд нь зөвхөн тайлбарлах зориулалттай жишээ бөгөөд төслийн бодит хэмжилт биш.
 
 | Үйл явдал | Огноо |
+
 |---|---|
+
 | US-01 ажил үүссэн | 10-р сарын 1 |
+
 | US-01 ажил эхэлсэн | 10-р сарын 3 |
+
 | US-01 ажил дууссан | 10-р сарын 6 |
 
-**Lead Time:**
+****Lead Time:****
 
 10-р сарын 1-ээс 10-р сарын 6 хүртэл = 5 хоног.
 
-**Cycle Time:**
+****Cycle Time:****
 
 10-р сарын 3-аас 10-р сарын 6 хүртэл = 3 хоног.
 
-**Хүлээх хугацаа:**
+****Хүлээх хугацаа:****
 
 10-р сарын 1-ээс 10-р сарын 3 хүртэл = 2 хоног.
 
@@ -411,29 +566,41 @@ Lead Time нь хүлээсэн хугацааг багтаадаг бол Cycle
 
 Бодит хэмжилт хийхийн тулд ажил үүссэн, ажиллаж эхэлсэн болон дууссан огноог бүртгэх шаардлагатай.
 
-## 6. Lean-ийн 7 үрэлгэн зардал
+### 6. Lean-ийн 7 үрэлгэн зардал
 
 Lean зарчим нь хэрэглэгчид үнэ цэн өгөхгүй үйл ажиллагааг багасгаж, ажлын урсгалыг сайжруулахад чиглэнэ.
 
 | № | Үрэлгэн зардал | Манай төсөл дээрх жишээ |
+
 |---:|---|---|
+
 | 1 | Илүүдэл үйлдвэрлэл | Хэрэглэгчийн шаардлагагүй функцийг урьдчилан хөгжүүлэх |
+
 | 2 | Хүлээлт | Шаардлага тодруулах, шийдвэр гаргах эсвэл хариу авахыг хүлээх |
+
 | 3 | Илүү боловсруулалт | Шаардлагагүй нарийн тохиргоо болон нэмэлт функц хийх |
+
 | 4 | Согог | Алдаатай шаардлага эсвэл кодын улмаас ажлыг дахин хийх |
+
 | 5 | Шаардлагагүй тээвэрлэлт | Ижил мэдээллийг олон газар давхар дамжуулах |
+
 | 6 | Илүүдэл нөөц | Хэт олон эхэлсэн боловч дуусаагүй ажил хуримтлуулах |
+
 | 7 | Шаардлагагүй хөдөлгөөн | Хэрэгтэй мэдээллийг олохын тулд олон файл, хуудас хооронд шилжих |
 
-### 6.1. Үрэлгэн зардлыг бууруулах арга
+#### 6.1. Үрэлгэн зардлыг бууруулах арга
 
 - User Story-г хөгжүүлж эхлэхээс өмнө шаардлагыг тодорхой болгох.
+
 - WIP хязгаар мөрдөж, дуусаагүй ажлын тоог хянах.
+
 - Хэрэглэгчид үнэ цэн өгөх үндсэн функцүүдийг түрүүлж хөгжүүлэх.
+
 - Алдааг эрт илрүүлж, дахин ажиллах шаардлагыг багасгах.
+
 - GitHub Issues болон Projects ашиглан ажлын мэдээллийг нэг дор зохион байгуулах.
 
-## 7. Дүгнэлт
+### 7. Дүгнэлт
 
 Энэхүү лабораторийн ажлаар Цагийн ажил зуучлалын системийн GitHub Projects дээр Kanban Board үүсгэж, ажлын урсгалыг `Todo`, `In Progress`, `Review`, `Done` гэсэн дөрвөн төлөвөөр зохион байгуулсан. Мөн `In Progress` баганад 3, `Review` баганад 2 гэсэн WIP хязгаарлалт тохируулсан.
 
@@ -441,101 +608,347 @@ Lead Time болон Cycle Time-ийн ялгаа, тэдгээрийн тооц
 
 Бодит Lead Time болон Cycle Time-ийг ажил эхэлж, дууссан огноонууд бүртгэгдсэний дараа хэмжиж, цаашдын хөгжүүлэлтийн явцад ажлын урсгалыг сайжруулахад ашиглана.
 
-## 8. Repository
+### 8. Repository
 
 [Цагийн ажил зуучлалын систем — GitHub Repository](https://github.com/Hirito572/part-time-job-matching-system)
-## Lab 6 - Git Collaboration
 
-This section demonstrates feature branching and collaborative development.
 
-Feature: Greeting message
-Feature: Welcome message
+---
 
-**Лабораторийн ажил №7: GitHub Actions ашиглан CI Pipeline байгуулах**
+## Лабораторийн ажил №6 — Git хамтын ажиллагаа
+
+Энэ хэсэгт feature branch үүсгэх болон багийн хамтын хөгжүүлэлтийг харуулсан.
+
+Feature: Мэндчилгээний мессеж
+
+Feature: Тавтай морил мессеж
+
+## Лабораторийн ажил №7: GitHub Actions ашиглан CI Pipeline байгуулах
 
 Цагийн ажил зуучлалын системийн репозиторт GitHub Actions ашиглан CI pipeline байгуулсан. Workflow нь `push` болон `pull_request` үйлдлээр автоматаар ажиллаж, Node.js орчныг тохируулан тестүүдийг ажиллуулдаг.
 
 Эхний ажиллуулалтаар хоёр тест амжилттай болж, workflow ногоон төлөвтэй дууссан. Дараа нь нэг тестийн хүлээгдэж буй утгыг зориудаар буруу болгосноор `AssertionError` үүсэж, workflow амжилтгүй болсон. Алдааны логийг шалгасны дараа тестийн утгыг буцаан засаж, гурав дахь ажиллуулалтаар CI дахин амжилттай болсон.
 
-**Дүгнэлт:** GitHub Actions нь кодын өөрчлөлт бүрийн дараа тестийг автоматаар ажиллуулж, алдааг эрт илрүүлэх боломж олгодог.
----
+****Дүгнэлт:**** GitHub Actions нь кодын өөрчлөлт бүрийн дараа тестийг автоматаар ажиллуулж, алдааг эрт илрүүлэх боломж олгодог.
+
+**---**
 
 ---
 
-# Лабораторийн ажил №8 — Dockerfile бичих, Image бүтээх, ажиллуулах
 
-## 1. Лабораторийн зорилго
+---
+
+## Лабораторийн ажил №8 — Dockerfile бичих, Image бүтээх, ажиллуулах
+
+### 1. Лабораторийн зорилго
 
 Цагийн ажил зуучлалын системийн frontend болон backend хэсгийг Docker ашиглан контейнержуулж, Docker Compose-оор зэрэг ажиллуулах, Docker Layer Caching-ийн зарчмыг турших.
 
-## 2. Ашигласан технологи
+### 2. Ашигласан технологи
 
 - Docker Desktop
+
 - Docker Compose
+
 - Next.js 16.4.6
+
 - Node.js 22 Alpine
+
 - Python 3.14
+
 - Django 5.2.19
 
-## 3. Dockerfile
+### 3. Dockerfile
 
 Төслийн frontend болон backend хэсэгт тус тус Dockerfile үүсгэсэн.
 
-**Frontend:** `frontend/Dockerfile`
+****Frontend:**** `frontend/Dockerfile`
 
 ```dockerfile
+
 FROM node:22-alpine
+
 WORKDIR /app
+
 COPY package*.json ./
+
 RUN npm ci
+
 COPY . .
+
 RUN npm run build
+
 EXPOSE 3000
+
 CMD ["npm", "start"]
+
 ```
 
-**Backend:** `backend/Dockerfile`
+****Backend:**** `backend/Dockerfile`
 
 ```dockerfile
+
 FROM python:3.14-slim
+
 WORKDIR /app
+
 COPY requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . .
+
 EXPOSE 8000
+
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
 ```
 
 Dependency файлуудыг эхэлж хуулж суулгаснаар эх код өөрчлөгдөх үед dependency суулгах layer-үүдийг дахин ажиллуулахгүй байх боломж бүрдүүлсэн.
 
-## 4. Docker Compose
+### 4. Docker Compose
 
 Төслийн үндсэн хавтсанд `docker-compose.yml` үүсгэж, frontend болон backend сервисүүдийг хамтад нь ажиллуулсан.
 
 | Сервис | Хаяг |
+
 |---|---|
+
 | Frontend | http://localhost:3000 |
+
 | Backend | http://localhost:8000 |
+
 | Backend API | http://localhost:8000/api/health/ |
 
 Контейнеруудыг ажиллуулах:
 
 ```bash
+
 docker compose up --build -d
+
 ```
 
 Контейнеруудын төлөв шалгах:
 
 ```bash
+
 docker compose ps
+
 ```
 
-## 5. Backend API холболтын шалгалт
+### 5. Backend API холболтын шалгалт
 
 Backend API-г дараах командаар шалгасан:
 
 ```bash
+
 curl http://localhost:8000/api/health/
+
+```
+
+Амжилттай хариу:
+
+```json
+
+{
+
+&#x20; "status": "ok",
+
+&#x20; "message": "Part-Time Job Matching API is running"
+
+}
+
+```
+
+Frontend дээр backend API-ийн холболтын төлөвийг амжилттай харуулсан.
+
+### 6. Docker Layer Caching туршилт
+
+Frontend-ийн `src/app/page.tsx` файлд дараах текстийг нэмсэн:
+
+```tsx
+
+\<p>Docker Layer Caching Test\</p>
+
+```
+
+Дараа нь Docker image-үүдийг дахин build хийсэн:
+
+```bash
+
+docker compose --progress=plain build
+
+```
+
+Build-ийн үр дүнд:
+
+- Backend-ийн `requirements.txt` болон `pip install` layer-үүд `CACHED` төлөвтэй байсан.
+
+- Frontend-ийн `npm ci` layer `CACHED` төлөвтэй байсан.
+
+- Frontend-ийн `COPY . .` layer дахин ажилласан.
+
+- Frontend-ийн `RUN npm run build` дахин ажиллаж, production build амжилттай болсон.
+
+Ингэснээр өөрчлөгдөөгүй dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer дахин ажиллаж байгааг баталгаажуулсан.
+
+### 7. Screenshot болон нотолгоо
+
+| № | Файлын нэр | Тайлбар |
+
+|---|---|---|
+
+| 1 | `screenshots/docker-frontend-api.png` | Frontend болон Backend API холболт |
+
+| 2 | `screenshots/docker-layer-cache.png` | Browser дээрх Docker Layer Caching Test |
+
+| 3 | `screenshots/docker-build-output.png` | Docker image build болон layer caching-ийн Terminal output |
+
+### 8. Дүгнэлт
+
+Энэхүү лабораторийн ажлаар Цагийн ажил зуучлалын системийн frontend болон backend хэсгийг Docker ашиглан контейнержуулж, Docker Compose-оор зэрэг ажиллуулсан. Backend API-ийн health endpoint болон frontend-ийн холболтыг шалгаж, Docker image build амжилттай болсныг баталгаажуулсан.
+
+Мөн эх кодод жижиг өөрчлөлт оруулж дахин build хийхэд dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer болон production build дахин ажиллаж байгааг ажигласан. Ингэснээр Docker Layer Caching-ийн зарчимтай танилцсан.
+
+
+---
+
+## Lab 9 — Minikube Kubernetes Deployment and Service
+
+### Objective
+
+Deploy the Part-Time Job Matching System backend to a local Kubernetes cluster using Minikube.
+
+### Environment
+
+- Kubernetes: Minikube
+
+- Driver: Docker
+
+- Backend Docker image: `part-time-backend:1.0`
+
+### Deployment
+
+- Created `k8s/deployment.yaml`.
+
+- Configured 3 replicas for the backend.
+
+- Applied the Deployment using `kubectl apply`.
+
+- Verified that all 3 Pods were running.
+
+### Service
+
+- Created `k8s/service.yaml`.
+
+- Configured a NodePort Service on port `30080`.
+
+- Verified the backend health endpoint:
+
+&#x20; `GET /api/health/`
+
+- Received a successful response:
+
+&#x20; `{"status": "ok", "message": "Part-Time Job Matching API is running"}`
+
+### Self-Healing Test
+
+Deleted one running Pod manually using `kubectl delete pod`.
+
+Kubernetes automatically created a replacement Pod, maintaining 3 running replicas.
+
+### Evidence
+
+- `screenshots/lab09-deployment-running.png`
+
+- `screenshots/lab09-self-healing.png`
+
+### Kubernetes Configuration
+
+- `k8s/deployment.yaml`
+
+- `k8s/service.yaml`
+
+---
+
+## Лабораторийн ажил №9 — Minikube орчинд Deployment, Service үүсгэх
+
+### 1. Лабораторийн зорилго
+
+Minikube ашиглан локал Kubernetes орчин үүсгэх, Docker image-д суурилсан Deployment болон Service тохируулах, олон replica ажиллуулах, мөн Pod устгасан үед Kubernetes автоматаар дахин үүсгэж байгааг шалгах.
+
+### 2. Ашигласан технологи
+
+- Minikube
+- Kubernetes
+- kubectl
+- Docker
+- Docker image: `part-time-backend:1.0`
+
+### 3. Minikube орчин бэлтгэх
+
+Minikube-г Docker driver ашиглан эхлүүлсэн.
+
+```bash
+minikube start --driver=docker
+```
+
+Kubernetes node-ийн төлөвийг шалгахад `minikube` node `Ready` төлөвтэй ажиллаж байсан.
+
+```bash
+kubectl get nodes
+```
+
+Backend Docker image-ийг Minikube орчинд ачаалсан.
+
+```bash
+minikube image load part-time-backend:1.0
+```
+
+### 4. Deployment үүсгэх
+
+`k8s/deployment.yaml` файл үүсгэж, backend сервисийг 3 replica-тай ажиллахаар тохируулсан.
+
+- Deployment нэр: `part-time-backend`
+- Replica тоо: 3
+- Container image: `part-time-backend:1.0`
+- Container port: `8000`
+
+Deployment-ийг Kubernetes орчинд үүсгэсэн.
+
+```bash
+kubectl apply -f k8s/deployment.yaml
+```
+
+Deployment болон Pod-уудын төлөвийг шалгахад 3 Pod бүгд `Running` төлөвтэй, Deployment `3/3` бэлэн болсон.
+
+```bash
+kubectl get deployments
+kubectl get pods
+```
+
+### 5. Service үүсгэх
+
+`k8s/service.yaml` файл үүсгэж, backend Deployment-ийг NodePort төрлийн Service-ээр дамжуулан хандах боломжтой болгосон.
+
+- Service нэр: `part-time-backend-service`
+- Service төрөл: `NodePort`
+- Service port: `8000`
+- Target port: `8000`
+- NodePort: `30080`
+
+Service-ийг Kubernetes орчинд үүсгэсэн.
+
+```bash
+kubectl apply -f k8s/service.yaml
+kubectl get services
+```
+
+Minikube Service URL-г авч, backend-ийн health endpoint руу хүсэлт илгээж шалгасан.
+
+```bash
+minikube service part-time-backend-service --url
+curl http://127.0.0.1:58000/api/health/
 ```
 
 Амжилттай хариу:
@@ -547,80 +960,31 @@ curl http://localhost:8000/api/health/
 }
 ```
 
-Frontend дээр backend API-ийн холболтын төлөвийг амжилттай харуулсан.
+### 6. Pod автоматаар сэргээгдэх туршилт
 
-## 6. Docker Layer Caching туршилт
-
-Frontend-ийн `src/app/page.tsx` файлд дараах текстийг нэмсэн:
-
-```tsx
-<p>Docker Layer Caching Test</p>
-```
-
-Дараа нь Docker image-үүдийг дахин build хийсэн:
+Kubernetes-ийн Self-Healing ажиллагааг шалгахын тулд ажиллаж байсан Pod-уудын нэгийг зориудаар устгасан.
 
 ```bash
-docker compose --progress=plain build
+kubectl delete pod part-time-backend-5b6fb5c5db-dws4x
+kubectl get pods
 ```
 
-Build-ийн үр дүнд:
+Устгасан Pod-ийн оронд Kubernetes автоматаар шинэ Pod үүсгэсэн. Ингэснээр Deployment-ийн хүссэн replica тоо болох 3 Pod дахин ажиллаж байгааг баталгаажуулсан.
 
-- Backend-ийн `requirements.txt` болон `pip install` layer-үүд `CACHED` төлөвтэй байсан.
-- Frontend-ийн `npm ci` layer `CACHED` төлөвтэй байсан.
-- Frontend-ийн `COPY . .` layer дахин ажилласан.
-- Frontend-ийн `RUN npm run build` дахин ажиллаж, production build амжилттай болсон.
-
-Ингэснээр өөрчлөгдөөгүй dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer дахин ажиллаж байгааг баталгаажуулсан.
-
-## 7. Screenshot болон нотолгоо
-
-## 7. Screenshot болон нотолгоо
+### 7. Screenshot болон нотолгоо
 
 | № | Файлын нэр | Тайлбар |
 |---|---|---|
-| 1 | `screenshots/docker-frontend-api.png` | Frontend болон Backend API холболт |
-| 2 | `screenshots/docker-layer-cache.png` | Browser дээрх Docker Layer Caching Test |
-| 3 | `screenshots/docker-build-output.png` | Docker image build болон layer caching-ийн Terminal output |
+| 1 | `screenshots/lab09-deployment-running.png` | Deployment, 3 Pod болон Service-ийн төлөв |
+| 2 | `screenshots/lab09-self-healing.png` | Pod устгасны дараа Kubernetes шинэ Pod үүсгэсэн байдал |
 
+### 8. Kubernetes тохиргооны файлууд
 
+- `k8s/deployment.yaml` — Backend Deployment-ийн тохиргоо
+- `k8s/service.yaml` — Backend Service-ийн тохиргоо
 
-## 8. Дүгнэлт
+### 9. Дүгнэлт
 
-Энэхүү лабораторийн ажлаар Цагийн ажил зуучлалын системийн frontend болон backend хэсгийг Docker ашиглан контейнержуулж, Docker Compose-оор зэрэг ажиллуулсан. Backend API-ийн health endpoint болон frontend-ийн холболтыг шалгаж, Docker image build амжилттай болсныг баталгаажуулсан.
+Энэхүү лабораторийн ажлаар Minikube ашиглан локал Kubernetes кластер ажиллуулж, Цагийн ажил зуучлалын системийн backend-д зориулсан 3 replica бүхий Deployment болон NodePort Service үүсгэсэн. Backend-ийн health endpoint-д хүсэлт илгээж, API амжилттай ажиллаж байгааг шалгасан.
 
-Мөн эх кодод жижиг өөрчлөлт оруулж дахин build хийхэд dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer болон production build дахин ажиллаж байгааг ажигласан. Ингэснээр Docker Layer Caching-ийн зарчимтай танилцсан.
-## Lab 9 — Minikube Kubernetes Deployment and Service
-
-### Objective
-Deploy the Part-Time Job Matching System backend to a local Kubernetes cluster using Minikube.
-
-### Environment
-- Kubernetes: Minikube
-- Driver: Docker
-- Backend Docker image: `part-time-backend:1.0`
-
-### Deployment
-- Created `k8s/deployment.yaml`.
-- Configured 3 replicas for the backend.
-- Applied the Deployment using `kubectl apply`.
-- Verified that all 3 Pods were running.
-
-### Service
-- Created `k8s/service.yaml`.
-- Configured a NodePort Service on port `30080`.
-- Verified the backend health endpoint:
-  `GET /api/health/`
-- Received a successful response:
-  `{"status": "ok", "message": "Part-Time Job Matching API is running"}`
-
-### Self-Healing Test
-Deleted one running Pod manually using `kubectl delete pod`.
-Kubernetes automatically created a replacement Pod, maintaining 3 running replicas.
-
-### Evidence
-- `screenshots/lab09-deployment-running.png`
-- `screenshots/lab09-self-healing.png`
-
-### Kubernetes Configuration
-- `k8s/deployment.yaml`
-- `k8s/service.yaml`
+Мөн нэг Pod-ийг зориудаар устгахад Kubernetes автоматаар орлуулах Pod үүсгэж, нийт 3 replica-г хадгалж байгааг баталгаажуулсан. Ингэснээр Kubernetes-ийн Deployment, Service болон Pod автоматаар сэргээгдэх үндсэн ойлголтуудтай танилцсан.
