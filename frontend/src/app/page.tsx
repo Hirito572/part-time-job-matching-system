@@ -42,6 +42,7 @@ export default function Home() {
       {error && <p className="text-red-500">{error}</p>}
 
       {!apiData && !error && <p>Connecting to backend...</p>}
+      <p>Docker Layer Caching Test</p>
     </main>
   );
 }
