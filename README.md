@@ -458,3 +458,134 @@ Feature: Welcome message
 Эхний ажиллуулалтаар хоёр тест амжилттай болж, workflow ногоон төлөвтэй дууссан. Дараа нь нэг тестийн хүлээгдэж буй утгыг зориудаар буруу болгосноор `AssertionError` үүсэж, workflow амжилтгүй болсон. Алдааны логийг шалгасны дараа тестийн утгыг буцаан засаж, гурав дахь ажиллуулалтаар CI дахин амжилттай болсон.
 
 **Дүгнэлт:** GitHub Actions нь кодын өөрчлөлт бүрийн дараа тестийг автоматаар ажиллуулж, алдааг эрт илрүүлэх боломж олгодог.
+---
+
+---
+
+# Лабораторийн ажил №8 — Dockerfile бичих, Image бүтээх, ажиллуулах
+
+## 1. Лабораторийн зорилго
+
+Цагийн ажил зуучлалын системийн frontend болон backend хэсгийг Docker ашиглан контейнержуулж, Docker Compose-оор зэрэг ажиллуулах, Docker Layer Caching-ийн зарчмыг турших.
+
+## 2. Ашигласан технологи
+
+- Docker Desktop
+- Docker Compose
+- Next.js 16.4.6
+- Node.js 22 Alpine
+- Python 3.14
+- Django 5.2.19
+
+## 3. Dockerfile
+
+Төслийн frontend болон backend хэсэгт тус тус Dockerfile үүсгэсэн.
+
+**Frontend:** `frontend/Dockerfile`
+
+```dockerfile
+FROM node:22-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+**Backend:** `backend/Dockerfile`
+
+```dockerfile
+FROM python:3.14-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 8000
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+```
+
+Dependency файлуудыг эхэлж хуулж суулгаснаар эх код өөрчлөгдөх үед dependency суулгах layer-үүдийг дахин ажиллуулахгүй байх боломж бүрдүүлсэн.
+
+## 4. Docker Compose
+
+Төслийн үндсэн хавтсанд `docker-compose.yml` үүсгэж, frontend болон backend сервисүүдийг хамтад нь ажиллуулсан.
+
+| Сервис | Хаяг |
+|---|---|
+| Frontend | http://localhost:3000 |
+| Backend | http://localhost:8000 |
+| Backend API | http://localhost:8000/api/health/ |
+
+Контейнеруудыг ажиллуулах:
+
+```bash
+docker compose up --build -d
+```
+
+Контейнеруудын төлөв шалгах:
+
+```bash
+docker compose ps
+```
+
+## 5. Backend API холболтын шалгалт
+
+Backend API-г дараах командаар шалгасан:
+
+```bash
+curl http://localhost:8000/api/health/
+```
+
+Амжилттай хариу:
+
+```json
+{
+  "status": "ok",
+  "message": "Part-Time Job Matching API is running"
+}
+```
+
+Frontend дээр backend API-ийн холболтын төлөвийг амжилттай харуулсан.
+
+## 6. Docker Layer Caching туршилт
+
+Frontend-ийн `src/app/page.tsx` файлд дараах текстийг нэмсэн:
+
+```tsx
+<p>Docker Layer Caching Test</p>
+```
+
+Дараа нь Docker image-үүдийг дахин build хийсэн:
+
+```bash
+docker compose --progress=plain build
+```
+
+Build-ийн үр дүнд:
+
+- Backend-ийн `requirements.txt` болон `pip install` layer-үүд `CACHED` төлөвтэй байсан.
+- Frontend-ийн `npm ci` layer `CACHED` төлөвтэй байсан.
+- Frontend-ийн `COPY . .` layer дахин ажилласан.
+- Frontend-ийн `RUN npm run build` дахин ажиллаж, production build амжилттай болсон.
+
+Ингэснээр өөрчлөгдөөгүй dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer дахин ажиллаж байгааг баталгаажуулсан.
+
+## 7. Screenshot болон нотолгоо
+
+## 7. Screenshot болон нотолгоо
+
+| № | Файлын нэр | Тайлбар |
+|---|---|---|
+| 1 | `screenshots/docker-frontend-api.png` | Frontend болон Backend API холболт |
+| 2 | `screenshots/docker-layer-cache.png` | Browser дээрх Docker Layer Caching Test |
+| 3 | `screenshots/docker-build-output.png` | Docker image build болон layer caching-ийн Terminal output |
+
+
+
+## 8. Дүгнэлт
+
+Энэхүү лабораторийн ажлаар Цагийн ажил зуучлалын системийн frontend болон backend хэсгийг Docker ашиглан контейнержуулж, Docker Compose-оор зэрэг ажиллуулсан. Backend API-ийн health endpoint болон frontend-ийн холболтыг шалгаж, Docker image build амжилттай болсныг баталгаажуулсан.
+
+Мөн эх кодод жижиг өөрчлөлт оруулж дахин build хийхэд dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer болон production build дахин ажиллаж байгааг ажигласан. Ингэснээр Docker Layer Caching-ийн зарчимтай танилцсан.
