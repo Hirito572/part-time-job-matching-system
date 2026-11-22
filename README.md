@@ -589,3 +589,38 @@ Build-ийн үр дүнд:
 Энэхүү лабораторийн ажлаар Цагийн ажил зуучлалын системийн frontend болон backend хэсгийг Docker ашиглан контейнержуулж, Docker Compose-оор зэрэг ажиллуулсан. Backend API-ийн health endpoint болон frontend-ийн холболтыг шалгаж, Docker image build амжилттай болсныг баталгаажуулсан.
 
 Мөн эх кодод жижиг өөрчлөлт оруулж дахин build хийхэд dependency layer-үүд cache ашиглаж, өөрчлөгдсөн эх кодын layer болон production build дахин ажиллаж байгааг ажигласан. Ингэснээр Docker Layer Caching-ийн зарчимтай танилцсан.
+## Lab 9 — Minikube Kubernetes Deployment and Service
+
+### Objective
+Deploy the Part-Time Job Matching System backend to a local Kubernetes cluster using Minikube.
+
+### Environment
+- Kubernetes: Minikube
+- Driver: Docker
+- Backend Docker image: `part-time-backend:1.0`
+
+### Deployment
+- Created `k8s/deployment.yaml`.
+- Configured 3 replicas for the backend.
+- Applied the Deployment using `kubectl apply`.
+- Verified that all 3 Pods were running.
+
+### Service
+- Created `k8s/service.yaml`.
+- Configured a NodePort Service on port `30080`.
+- Verified the backend health endpoint:
+  `GET /api/health/`
+- Received a successful response:
+  `{"status": "ok", "message": "Part-Time Job Matching API is running"}`
+
+### Self-Healing Test
+Deleted one running Pod manually using `kubectl delete pod`.
+Kubernetes automatically created a replacement Pod, maintaining 3 running replicas.
+
+### Evidence
+- `screenshots/lab09-deployment-running.png`
+- `screenshots/lab09-self-healing.png`
+
+### Kubernetes Configuration
+- `k8s/deployment.yaml`
+- `k8s/service.yaml`

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: part-time-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: part-time-backend
+  template:
+    metadata:
+      labels:
+        app: part-time-backend
+    spec:
+      containers:
+        - name: backend
+          image: part-time-backend:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
