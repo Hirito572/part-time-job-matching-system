@@ -36,3 +36,11 @@ def test_health_check_returns_json_content_type(client):
     response = client.get("/api/health/")
 
     assert response["Content-Type"] == "application/json"
+    
+@pytest.mark.django_db
+def test_health_check_handles_head_request(client):
+    response = client.head("/api/health/")
+
+    assert response.status_code == 200
+    assert response["Content-Type"] == "application/json"
+    assert response.content == b""
