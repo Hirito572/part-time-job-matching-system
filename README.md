@@ -988,3 +988,122 @@ kubectl get pods
 Энэхүү лабораторийн ажлаар Minikube ашиглан локал Kubernetes кластер ажиллуулж, Цагийн ажил зуучлалын системийн backend-д зориулсан 3 replica бүхий Deployment болон NodePort Service үүсгэсэн. Backend-ийн health endpoint-д хүсэлт илгээж, API амжилттай ажиллаж байгааг шалгасан.
 
 Мөн нэг Pod-ийг зориудаар устгахад Kubernetes автоматаар орлуулах Pod үүсгэж, нийт 3 replica-г хадгалж байгааг баталгаажуулсан. Ингэснээр Kubernetes-ийн Deployment, Service болон Pod автоматаар сэргээгдэх үндсэн ойлголтуудтай танилцсан.
+## Лабораторийн ажил №10 — Автомат тест бичих, CI Pipeline-д холбох
+
+### 1. Лабораторийн зорилго
+
+Django backend-ийн функцэд автомат unit test бичих, Pytest ашиглан тестүүдийг ажиллуулах, мөн GitHub Actions CI Pipeline-д тестүүдийг холбож автомат шалгалт хийх.
+
+### 2. Ашигласан технологи
+
+- Python 3.14
+- Django 5.2.19
+- Pytest 9.2.0
+- pytest-django 4.14.0
+- Node.js 22
+- GitHub Actions
+
+### 3. Pytest суулгаж, тохируулах
+
+Backend-ийн virtual environment орчинд Pytest болон Django plugin суулгасан.
+
+```bash
+pip install pytest pytest-django
+```
+
+`backend/pytest.ini` тохиргооны файл үүсгэсэн.
+
+```ini
+[pytest]
+DJANGO_SETTINGS_MODULE = config.settings
+python_files = tests.py test_*.py *_tests.py
+```
+
+### 4. Unit test бичих
+
+`backend/core/views.py` файлд байрлах `health_check()` функцийг сонгож тест бичсэн.
+
+Уг функц нь `/api/health/` endpoint-д JSON хэлбэрийн хариу буцаадаг.
+
+`backend/core/tests.py` файлд дараах 4 тестийг бичсэн.
+
+1. HTTP 200 статус буцааж байгаа эсэхийг шалгах.
+2. JSON хариуны `status`, `message` утгууд зөв эсэхийг шалгах.
+3. GET хүсэлт HTTP 405 алдаагаар татгалзагдаагүй эсэхийг шалгах.
+4. Хариуны Content-Type `application/json` байгаа эсэхийг шалгах.
+
+Энэ функц нь өгөгдлийн сан болон гаднын API ашигладаггүй тул Mock объект ашиглах шаардлагагүй.
+
+### 5. Локал орчинд тест ажиллуулах
+
+Node.js тестийг ажиллуулсан.
+
+```bash
+npm test
+```
+
+Үр дүн:
+- Нийт 2 тест.
+- 2 тест амжилттай.
+- 0 алдаатай.
+
+Django тестийг ажиллуулсан.
+
+```bash
+cd backend
+pytest -v
+```
+
+Үр дүн:
+
+```text
+collected 4 items
+
+core/tests.py::test_health_check_returns_200 PASSED
+core/tests.py::test_health_check_returns_expected_json PASSED
+core/tests.py::test_health_check_accepts_get_request PASSED
+core/tests.py::test_health_check_returns_json_content_type PASSED
+
+4 passed in 0.10s
+```
+
+### 6. CI Pipeline-д холбох
+
+`.github/workflows/ci.yml` файлыг шинэчилж Node.js болон Python тестүүдийг GitHub Actions-д холбосон.
+
+CI Pipeline дараах үйлдлүүдийг автоматаар гүйцэтгэнэ.
+
+- Repository-г татаж авах.
+- Node.js 22 орчныг тохируулах.
+- Node.js хамаарлуудыг суулгах.
+- `npm test` командаар тест ажиллуулах.
+- Python 3.12 орчныг тохируулах.
+- `backend/requirements.txt` файлаас Python хамаарлуудыг суулгах.
+- `pytest -v` командаар Django тест ажиллуулах.
+
+### 7. GitHub Actions дээр шалгах
+
+Өөрчлөлтүүдийг `feature/development` салбар руу илгээсэн.
+
+```bash
+git push origin feature/development
+```
+
+GitHub Actions дээр CI Pipeline амжилттай ажилласан.
+
+- Commit: `3666df2`
+- Салбар: `feature/development`
+- CI төлөв: Амжилттай
+- Ажилласан хугацаа: 15 секунд
+
+### 8. Screenshot болон нотолгоо
+
+| № | Файлын нэр | Тайлбар |
+|---|---|---|
+| 1 | `screenshots/lab10-ci-success.png` | GitHub Actions CI Pipeline амжилттай ажилласан байдал |
+
+### 9. Дүгнэлт
+
+Энэхүү лабораторийн ажлаар Django backend-ийн `health_check()` функцэд Pytest ашиглан 4 unit test бичиж, локал орчинд амжилттай ажиллуулсан.
+
+Мөн GitHub Actions CI Pipeline-ийг шинэчилж Node.js болон Python тестүүдийг автоматаар ажилладаг болгосон. GitHub Actions дээр CI Pipeline амжилттай ажиллаж байгааг шалгаж баталгаажуулсан.
