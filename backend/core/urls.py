@@ -1,5 +1,7 @@
+"""URL patterns for the core application."""
 
 from django.urls import path
+
 from .views import health_check
 
 urlpatterns = [
