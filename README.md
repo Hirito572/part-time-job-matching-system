@@ -996,7 +996,8 @@ Django backend-ийн функцэд автомат unit test бичих, Pytest
 
 ### 2. Ашигласан технологи
 
-- Python 3.14
+- Python 3.14 (локал орчин)
+- Python 3.12 (CI орчин)
 - Django 5.2.19
 - Pytest 9.2.0
 - pytest-django 4.14.0
@@ -1025,14 +1026,16 @@ python_files = tests.py test_*.py *_tests.py
 
 Уг функц нь `/api/health/` endpoint-д JSON хэлбэрийн хариу буцаадаг.
 
-`backend/core/tests.py` файлд дараах 4 тестийг бичсэн.
+`backend/core/tests.py` файлд AAA (Arrange–Act–Assert) бүтцийг ашиглан дараах 6 тестийг бичсэн.
 
 1. HTTP 200 статус буцааж байгаа эсэхийг шалгах.
 2. JSON хариуны `status`, `message` утгууд зөв эсэхийг шалгах.
-3. GET хүсэлт HTTP 405 алдаагаар татгалзагдаагүй эсэхийг шалгах.
-4. Хариуны Content-Type `application/json` байгаа эсэхийг шалгах.
+3. Хариуны Content-Type `application/json` байгаа эсэхийг шалгах.
+4. HEAD хүсэлтэд HTTP 200 статус болон хоосон response body буцааж байгаа эсэхийг шалгах.
+5. `Accept: application/json` header-тай хүсэлтэд зөв JSON хариу буцааж байгаа эсэхийг шалгах.
+6. `Accept: text/html` header-тай хүсэлтэд мөн JSON хариу буцааж байгаа эсэхийг шалгах.
 
-Энэ функц нь өгөгдлийн сан болон гаднын API ашигладаггүй тул Mock объект ашиглах шаардлагагүй.
+`health_check()` функц нь өгөгдлийн сан болон гаднын API ашигладаггүй тул Mock объект ашиглах шаардлагагүй.
 
 ### 5. Локал орчинд тест ажиллуулах
 
@@ -1043,6 +1046,7 @@ npm test
 ```
 
 Үр дүн:
+
 - Нийт 2 тест.
 - 2 тест амжилттай.
 - 0 алдаатай.
@@ -1057,14 +1061,16 @@ pytest -v
 Үр дүн:
 
 ```text
-collected 4 items
+collected 6 items
 
 core/tests.py::test_health_check_returns_200 PASSED
 core/tests.py::test_health_check_returns_expected_json PASSED
-core/tests.py::test_health_check_accepts_get_request PASSED
 core/tests.py::test_health_check_returns_json_content_type PASSED
+core/tests.py::test_health_check_handles_head_request PASSED
+core/tests.py::test_health_check_with_json_accept_header PASSED
+core/tests.py::test_health_check_with_html_accept_header PASSED
 
-4 passed in 0.10s
+6 passed in 0.10s
 ```
 
 ### 6. CI Pipeline-д холбох
@@ -1104,6 +1110,6 @@ GitHub Actions дээр CI Pipeline амжилттай ажилласан.
 
 ### 9. Дүгнэлт
 
-Энэхүү лабораторийн ажлаар Django backend-ийн `health_check()` функцэд Pytest ашиглан 4 unit test бичиж, локал орчинд амжилттай ажиллуулсан.
+Энэхүү лабораторийн ажлаар Django backend-ийн `health_check()` функцэд Pytest ашиглан AAA бүтцээр 6 unit test бичиж, локал орчинд амжилттай ажиллуулсан.
 
 Мөн GitHub Actions CI Pipeline-ийг шинэчилж Node.js болон Python тестүүдийг автоматаар ажилладаг болгосон. GitHub Actions дээр CI Pipeline амжилттай ажиллаж байгааг шалгаж баталгаажуулсан.
